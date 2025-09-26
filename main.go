@@ -23,7 +23,7 @@ func displayDuration(p *params) error {
 		return err
 	}
 
-	fmt.Print(dur)
+	fmt.Println(dur)
 	return nil
 }
 
@@ -35,7 +35,7 @@ func duration(mp3FilePath string) (int, error) {
 	defer file.Close()
 
 	decoder := mp3.NewDecoder(file)
-	totalDuration := 0.0
+	var totalDuration time.Duration
 
 	var frame mp3.Frame
 	var skipped int
@@ -46,10 +46,8 @@ func duration(mp3FilePath string) (int, error) {
 			}
 			return -1, err
 		}
-		totalDuration += frame.Duration().Seconds()
+		totalDuration += frame.Duration()
 	}
 
-	duration := time.Second * time.Duration(totalDuration)
-
-	return int(duration.Seconds()), nil
+	return int(totalDuration.Seconds()), nil
 }
