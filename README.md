@@ -3,7 +3,6 @@
 [![goreleaser](https://github.com/mentax/sound-time/actions/workflows/goreleaser.yml/badge.svg)](https://github.com/mentax/sound-time/actions/workflows/goreleaser.yml)
 [![test](https://github.com/mentax/sound-time/actions/workflows/test.yaml/badge.svg)](https://github.com/mentax/sound-time/actions/workflows/test.yaml)
 [![GoDoc](https://godoc.org/github.com/mentax/sound-time?status.svg)](https://godoc.org/github.com/mentax/sound-time)
-[![codebeat badge](https://codebeat.co/badges/1b57272c-e0fa-4a14-93b5-3586e192fdb3)](https://codebeat.co/projects/github-com-mentax-sound-time-master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mentax/sound-time)](https://goreportcard.com/report/github.com/mentax/sound-time)
 [![GitHub release](https://img.shields.io/github/v/release/mentax/sound-time)](https://github.com/mentax/sound-time/releases/latest)
 
